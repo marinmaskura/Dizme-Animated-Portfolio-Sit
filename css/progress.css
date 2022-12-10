@@ -1,0 +1,69 @@
+:root {
+    --yellow: #f0c45c;
+    --green: #1cbe59;
+    --white: #ffffff;
+    --wrapper: #4b4f5c;
+    --themecolor: #f75023;
+    --body_dark: #2b2d33;
+    --footer_background: #3f4453; 
+    --paragraph: #b3b0c3;
+    --footerparacolor: #555555;
+    --footerh5: #363636;
+    --Jost: 'Jost', sans-serif;
+    --opensans: 'Open Sans', sans-serif;
+}
+body {
+    font-family: Arial;
+    background:#eee;
+}
+
+.barfiller {
+    width:100%;
+    height: 8px;
+    border-radius: 50px;
+    background:#e7e5f1;
+    position:relative;
+    margin-bottom: 45px !important;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+}
+
+.barfiller .fill {
+    display:block;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position:relative;
+    width:0px;
+    height:100%;
+    background:#333;
+    z-index:1;
+}
+
+.barfiller .tipWrap {
+    display:none;
+}
+
+.barfiller .tip {
+    margin-top:-30px;
+    padding:2px 4px;
+    color: var(--themecolor);
+    font-family: var(--Jost);
+    font-size: 16px;
+    left:0px;
+    position:absolute;
+    z-index:2;
+    /* background: #333; */
+} 
+
+/* .barfiller .tip:after {
+    border:solid;
+    border-color:rgba(0,0,0,.8) transparent;
+    border-width:6px 6px 0 6px;
+    content:"";
+    display:block;
+    position:absolute;
+    left:9px;
+    top:100%;
+    z-index:9
+} */
