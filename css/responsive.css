@@ -1,0 +1,137 @@
+
+@media (max-width:991.98px) { /* 0px  <=767px  */
+    /* Common css start */
+    .common_btn_one {
+        color: #ffffff !important;
+        padding: 8px 20px;
+    }
+    /* Common css end */
+
+    #navbar{
+        position: fixed;
+        background: #2b2d33;
+        padding: 3px;
+        z-index: 9999;
+        
+    }
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+    
+.animation_close_btn{
+    padding: 3px;
+    background: transparent;
+    border: none;
+  }
+  .animation_close_btn{
+    width: 40px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  
+  }
+  .animation_close_btn:focus{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+  }
+  .animation_close_btn span{
+    width: 100%;
+    background: #fff;
+    height: 3px;
+    border-radius: 2px;
+    transition: all linear.1s;
+  }
+  .animation_close_btn span:nth-child(2){
+    height: 2px;
+  }
+  .animation_close_btn span.rotate_1{
+    transform: rotate(45deg) translateY(12px);
+  }
+  .animation_close_btn span.hide{
+    transform: translateX(-15px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .animation_close_btn span.rotate_2{
+    transform: rotate(-45deg) translateY(-12px);
+  }
+  /* Banner start */
+  #banner .row{
+    flex-direction: column-reverse;
+  }
+  .man_image {
+	height: 335px;
+	width: 280px;
+}
+.banner_info{
+    text-align: center;
+}
+.banner_info h1 {
+	font-size: 45px;
+}
+.banner_info h5 {
+	font-size: 17px;
+}
+  /* Banner end */
+
+  #process {
+        padding: 80px 0 80px 0;
+    }
+    .process_item{
+        margin-bottom: 60px;
+    }
+    .process_item h3{
+        padding-top: 15px;
+    }
+    .process_item .image {
+        width: 100px;
+        height: 100px;
+    }
+    .process_item .image img{
+        max-width: 100%;
+        height: auto;
+    }
+    .process_item .image svg{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width:575.98px) { /* 0px <=575px  */
+    #navbar{
+        padding: 3px;
+
+    }
+    .navbar-brand {
+        margin-right: 0 !important;
+    }
+}
+
+/* Device SM */
+@media (min-width:576px) and (max-width:767.98px) {
+    
+}
+/* Device MD */
+@media (min-width:768px) and (max-width:991.98px) {
+    
+}
+/* Device LG */
+@media (min-width:992px) and (max-width:1199.98px) {
+    
+}
+/* Device XL */
+@media (min-width:1200px) and (max-width:1399.98px) {
+    #navbar{
+        background: green;
+    }
+}
+/* Device XXL */
+@media (min-width:1400px)  {
+    
+}
