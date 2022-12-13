@@ -402,27 +402,27 @@ p {
     padding-top: 145px;
     padding-bottom: 43px;
 }
-.banner-info h3 {
+.banner_info h3 {
     color: var(--themecolor);
     font-size: 25px;
     font-weight: 400;
     font-family: var(--Jost);
 }
-.banner-info h1 {
+.banner_info h1 {
     color: var(--white);
     font-size: 60px;
     font-weight: 400;
     font-family: var(--Jost);
     margin-bottom: 13px;
 }
-.banner-info h4 {
+.banner_info h4 {
     color: var(--white);
     margin-bottom: 23px;
     font-weight: 400;
     font-size: 19px;
     font-family: var(--opensans);
 }
-.banner-info p {
+.banner_info p {
     color: var(--white);
     font-family: var(--opensans);
     font-size: 16px;
@@ -520,7 +520,7 @@ p {
         bottom: 40px;
     }
 }
-.banner-info .banner-btn {
+.banner_info .banner_btn {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -528,7 +528,7 @@ p {
     padding-bottom: 33px;
     font-family: var(--Jost);
 }
-.banner-info .banner-btn i {
+.banner_info .banner_btn i {
     color: var(--white);
 }
 .mouse{
@@ -618,7 +618,7 @@ p {
 .about_image .numbers .wrapper {
     background: var(--wrapper);
     width: 198px;
-    padding: 12px 25px;
+    padding: 12px 22px;
     display: flex;
     align-items: center;
     border-radius: 8px;
