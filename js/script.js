@@ -1,5 +1,24 @@
 "use strict";
 
+// Preloader Start
+setTimeout(()=> {
+    document.querySelector(".preloaderDiv").style.display = "none"
+},3800)
+// Preloader End
+
+// Back to top scrolling  line progress
+const process_line = document.querySelector(".process_line");
+window.addEventListener("scroll", function () {
+  let height = document.documentElement;
+  let scroll_top = height.scrollTop;
+  let scroll_height = height.scrollHeight;
+  let percent = (scroll_top / (scroll_height - height.clientHeight)) * 100;
+  let percentRound = Math.round(percent);
+  // console.log(percentRound);
+  process_line.style.height = `${percentRound}%`;
+});
+
+
 // Animation click button start
 let animation_close_btn = document.querySelector(".animation_close_btn");
 let line_1 = document.querySelector(".line_1");
@@ -11,10 +30,6 @@ animation_close_btn.addEventListener("click", function(){
     line_3.classList.toggle("rotate_2");
 })
 // Animation click button end
-
-setTimeout(()=> {
-    document.querySelector(".preloaderDiv").style.display = "none"
-},3800)
 
 // Custom cursor start
 let cursor_round = document.querySelector(".cursor_round");
@@ -113,7 +128,7 @@ $(function () {
     // testimonial slick slider js Start================
     $('.testimonial_slider').slick({
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         dots: true
     });
 })
