@@ -128,7 +128,7 @@ $(function () {
     // testimonial slick slider js Start================
     $('.testimonial_slider').slick({
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         dots: true
     });
 })
